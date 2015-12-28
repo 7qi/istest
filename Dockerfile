@@ -1,4 +1,4 @@
-FROM 172.30.48.10:5000/project01/centos7:latest
+FROM registry.oco.example.com/project01/centos7:latest
 MAINTAINER E.Nakai
 
 RUN yum -y install httpd
