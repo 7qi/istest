@@ -1,8 +1,6 @@
-FROM centos7:latest
-MAINTAINER E.Nakai
-
-RUN yum -y install httpd
-RUN echo 'Hello, World!' > /var/www/html/index.html
+FROM nginx:latest
+MAINTAINER zhao
+RUN echo 'Hello, World!' > /usr/share/nginx/html/index.html
 
 EXPOSE 80
-CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
+CMD ["/usr/sbin/nginx", "-D", "FOREGROUND"]
