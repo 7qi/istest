@@ -1,2 +1,2 @@
 FROM nginx:latest
-ADD https://github.com/sclorg/nginx-ex.git
+RUN echo '<h1>Hello, Docker!</h1>' > cd /usr/share/nginx/html/index.html
