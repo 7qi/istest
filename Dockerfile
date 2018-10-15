@@ -1,3 +1,3 @@
 FROM nginx
 EXPOSE 8080
-CMD ["/usr/share/nginx/html", "-D", "FOREGROUND"]
+CMD ["/usr/share/nginx/html", "-c", "/index.html", "-g", "daemon off;"]
