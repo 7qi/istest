@@ -1,2 +1,2 @@
 FROM nginx
-ADD /usr/share/nginx/html
+ADD static-html-directory /usr/share/nginx/html
