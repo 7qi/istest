@@ -1,2 +1,2 @@
 FROM nginx
-ADD /usr/share/nginx/html /dockerfile
+COPY static-html-directory root/usr/share/nginx/html
